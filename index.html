@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles.css" />
 
     <title>Frontend Mentor | Results summary component</title>
   </head>
@@ -24,15 +25,65 @@
     <main class="container">
       <section class="card">
         <aside class="content_1">
-          <h1>Your Result</h1>
+          <h1 class="result">Your Result</h1>
           <div class="number_groups">
-            <p>76</p>
-            <p>of 100</p>
+            <p class="result_number">76</p>
+            <p class="result_number_percentage">of 100</p>
           </div>
-          <p>Great</p>
-          <p>
+          <p class="great">Great</p>
+          <p class="description">
             You scored higher than 65% of the people who have taken these tests.
           </p>
+        </aside>
+        <aside class="content_2">
+          <h1 class="summary">Summary</h1>
+          <div class="all_stats">
+            <div class="stats_reaction">
+              <div class="image_and_name_reaction">
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  alt="icon-reaction"
+                  class="icon"
+                />
+                <p class="reaction">Reaction</p>
+              </div>
+              <div class="ratio">80<span>/ 100</span></div>
+            </div>
+            <div class="stats_memory">
+              <div class="image_and_name_memory">
+                <img
+                  src="./assets/images/icon-memory.svg"
+                  alt="icon-memory"
+                  class="icon"
+                />
+                <p class="memory">Memory</p>
+              </div>
+              <div class="ratio">92<span>/ 100</span></div>
+            </div>
+            <div class="stats_verbal">
+              <div class="image_and_name_verbal">
+                <img
+                  src="./assets/images/icon-verbal.svg"
+                  alt="icon-verbal"
+                  class="icon"
+                />
+                <p class="verbal">Verbal</p>
+              </div>
+              <div class="ratio">61<span>/ 100</span></div>
+            </div>
+            <div class="stats_visual">
+              <div class="image_and_name_visual">
+                <img
+                  src="./assets/images/icon-visual.svg"
+                  alt="icon-visual"
+                  class="icon"
+                />
+                <p class="visual">Visual</p>
+              </div>
+              <div class="ratio">72<span>/ 100</span></div>
+            </div>
+            <button class="continue">Continue</button>
+          </div>
         </aside>
       </section>
     </main>
